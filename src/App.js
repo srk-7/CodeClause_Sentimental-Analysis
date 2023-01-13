@@ -41,14 +41,14 @@ class App extends Component
 		const mysty = {
 			color: "black",
 		    backgroundColor: "lightblue",
-		    padding: "10px",
+		    padding: "15px",
 		    fontFamily: "Courier",
 		};
 		return (
 			<div className="App">
 				<h1 style={mysty}>Sentiment Analysis</h1>
-				<p><i>Enter text to analyze the sentiment:</i></p>
-				<textarea onChange={this.findSentiment} />
+				
+				<textarea placeholder="Enter text to analyze..." onChange={this.findSentiment} />
 				<p><b>Sentiment Score : </b>{this.state.sentimentScore}</p>
 				<p><b>Type of Sentiment : </b>{this.state.generalSentiment}</p>
 			</div>
